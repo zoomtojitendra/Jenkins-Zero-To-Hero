@@ -1,5 +1,7 @@
 ## NOTE: While I have prepared all the questions, to provide better answers in a detailed way, the summary provided below is the collection of my knowledge and information from various sources like Medium, Stack Overflow, ChatGPT.
 
+## Very Helpful, Jithendrra
+
 Q: Can you explain the CICD process in your current project ? or Can you talk about any CICD process that you have implemented ?
 
 A: In the current project we use the following tools orchestrated with Jenkins to achieve CICD.
