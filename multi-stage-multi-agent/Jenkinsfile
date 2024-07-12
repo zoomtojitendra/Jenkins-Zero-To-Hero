@@ -9,6 +9,15 @@ pipeline {
             sh 'mvn --version'
           }
         }
-        
+        stage('Buid'){
+            steps{
+                 sh 'javac HelloWorld.java'
+            }
+        }
+        stage('Run'){
+            steps{
+                 sh 'java HelloWorld'
+            }
+        }
     }
 }
