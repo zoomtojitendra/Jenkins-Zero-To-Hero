@@ -1,6 +1,5 @@
 pipeline {
     agent none
-    
     stages {
         stage('Back-end') {
         agent {
@@ -10,24 +9,6 @@ pipeline {
             sh 'mvn --version'
           }
         }
-        stage('Build') {
-            steps {
-                script {
-                    // Clean up previous build artifacts if necessary
-                    deleteDir()
-
-                    // Compile and build the Java program
-                    sh 'javac HelloWorld.java'
-                }
-            }
-        }
-        stage('Run') {
-            steps {
-                script {
-                    // Run the Java program
-                    sh 'java HelloWorld'
-                }
-            }
-        }
+        
     }
 }
